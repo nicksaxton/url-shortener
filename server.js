@@ -53,7 +53,7 @@ app.get('/create/*', function (req, res) {
                             else if (rslt.length) {
                                 var insertedDoc = {
                                     "original_url": rslt[0].original_url,
-                                    "short_url": "https://api-projects-saxtonn3.c9users.io/" + rslt[0].id
+                                    "short_url": "https://fierce-mesa-81075.herokuapp.com/" + rslt[0].id
                                 }
                                 res.send(JSON.stringify(insertedDoc))
                                 db.close()
@@ -73,7 +73,7 @@ app.get('/create/*', function (req, res) {
                                         console.log("Successfully inserted")
                                         var insertedDoc = {
                                             "original_url": r.ops[0].original_url,
-                                            "short_url": "https://api-projects-saxtonn3.c9users.io/" + r.ops[0].id
+                                            "short_url": "https://fierce-mesa-81075.herokuapp.com/" + r.ops[0].id
                                         }
                                         res.send(JSON.stringify(insertedDoc))
                                     }
